@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap');
+
+* {
+    font-family: 'Markazi Text';
+    font-weight: 400;
+  }
+
+/********************************* start end *****************************/
+nav{
+    background-color: #d9d9d9;
+    height: 100px;
+    padding: 40px 150px;
+    box-shadow: 2px 3px 10px #292051;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img{
+    width: 180px;
+    border-radius: 50%;
+}
+
+nav ul li a{
+    padding: 20px;
+    color:#292051;
+    font-size: 20px;
+    font-family: "Marhey", sans-serif;
+    font-weight: 600;
+    transition: ease 0.5s;
+}
+
+nav ul li a:hover{
+    color: #786c35;
+    font-size:22px;
+}
+/*************************************** end navbar ********************************/
+
+
+/*************************************** start main section ********************************/
+.main{
+    margin-top: 100px;
+    background-image: linear-gradient(#201941,#211a417e,
+#ffffff36
+),
+url(../IMAGES/غلاف.jpg);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 100px;
+}
+ .main h1{ 
+    padding: 50px;
+    font-size: 70px;   
+    color: #ffffff;
+    font-family: 'Markazi Text';
+ }
+
+
+@media (max-width:992px) {
+
+    nav{
+        height: 100px;
+        padding: 30px 80px;
+    }
+    
+    nav img{
+        width: 120px;
+    }
+}
+
+@media (max-width:786px) {
+
+    nav{
+        height: 110px;
+        padding: 20px;
+        align-self: center;
+    }
+
+    nav .rightDiv{
+        margin-top: 20px;
+    }
+    
+    nav img{
+        width: 80px;
+    }
+
+    .main h1{
+        font-size: 50px;
+    }
+}
+
+@media (max-width:600px) {
+
+    nav{
+        height: 200px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav ul li a{
+        padding: 10px;
+        font-size: 16px;
+    }
+    
+    nav .leftDiv{
+        text-align: center;
+    }
+
+    .main h1{
+        font-size: 40px;
+        padding: 40px 0px;
+    }
+}
+/*************************************** end main section ********************************/
+
+/*************************************** start aboutUs section ********************************/
+.aboutUs h1,.products h1,.contactUs h1{
+    font-size: 55px;
+    color: #201941;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px #786c35;
+}
+
+.aboutUs p{
+    padding: 50px;
+    font-size: 28px;
+    color: #292051;
+}
+
+@media (max-width:600px) {
+    .aboutUs p{
+        font-size: 20px;
+    }
+}
+
+.aboutUs h2,.products h2{
+    color: #786c35;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.aboutUs .images img{
+    width: 320px;
+    height: 320px;
+    border: 2px solid #786c35;
+    margin: 20px;
+    transition: ease 0.5s;
+    overflow: hidden;
+}
+
+.aboutUs .images img:hover{
+    transform: scale(1.1);
+}
+
+.aboutUs .advantages div{
+    background-color: #d1d1d1;
+    padding: 20px;
+    margin: 20px;
+    width: 25%;
+    border: 2px solid #292051;
+    transition: ease 0.8s;
+}
+
+.aboutUs .advantages div p{
+    font-size: 22px;
+}
+.aboutUs .advantages div:hover{
+margin-top: -5px;
+background-color: #fff;
+}
+
+.aboutUs .advantages div{
+    font-size: 60px;
+    color: #786c35;
+}
+
+@media (max-width:992px) {
+    .aboutUs .advantages div{
+        width: 42%;
+    }
+}
+@media (max-width:786px) {
+    .aboutUs .advantages div{
+        width: 95%;
+    }
+    .aboutUs .images img{
+        width: 250px;
+        height: 250px;
+    }
+}
+/*************************************** end aboutUs section ********************************/
+
+
+/*************************************** end products section ********************************/
+.products img{
+    height: 80px;
+    width: 120px;
+    padding: 10px;
+}
+
+.products video{
+    width: 350px;
+    height: 500px;
+}
+
+.ourworks img{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+/*************************************** end products section ********************************/
+
+/*************************************** start contactUs section ********************************/
+.contactUs{
+    background-color: #d7d1f1;
+}
+.contactUs div a{
+    background-color: #524a29;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 30px;
+    transition: ease 0.5s;
+    height: 60px;
+    align-self: center;
+}
+.contactUs div a:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.contactUs h3{
+    color: #201941;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+@media (max-width:450px) {
+    .contactUs h3{
+        font-size: 14px;
+    }
+}
+
+.contactUs div{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+/*************************************** end contactUs section ********************************/
+
